@@ -1,0 +1,37 @@
+<h1>Detalhes de User {{ user.id }}</h1>
+
+<div class="row">
+  <div class="col-6">
+    <span>Nome</span>
+    <p>{{ user.name }}</p>    
+  </div>
+  
+  <div class="row">
+    <div class="col-5">
+      <span>Email</span>
+      <p>{{ user.email }}</p>
+    </div>
+    <div class="col-5">
+      <span>Data de admição</span>
+      <p>01-01-2001</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-5">
+      <span>Área de atuação</span>
+        <p>Frontend</p>
+    </div>
+    <div class="col-5">
+      <span>Técnologias preferidas</span>
+      <p>ReactJS, Javascript</p>
+    </div>
+  </div>
+  
+</div>
+
+<button 
+  (click)="editUser(user.id)" 
+  class="btn btn-primary">
+  Editar
+</button>
