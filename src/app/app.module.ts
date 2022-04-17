@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +17,7 @@ import { UsersModule } from './users/users.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     UsersModule
   ],
   providers: [],

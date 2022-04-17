@@ -24,6 +24,11 @@ export class UsersService {
     const url = `${this.baseUrl}/${id}`;
     
     return this.http.get<User>(url).pipe(take(1))
-    
+
+  }
+
+  updateUser(user: User) { 
+    const url = `${this.baseUrl}/${user.id}`;
+    return this.http.put<User>(url, user)
   }
 }

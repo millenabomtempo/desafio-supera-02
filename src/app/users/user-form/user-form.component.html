@@ -1,0 +1,101 @@
+<form>
+  <div class="form-row">
+    <div class="col-sm-1">
+      <label for="id">ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="id"
+        formControlName="id"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row marginTop">
+    <div class="col-sm-5">
+      <label for="name">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        formControlName="name"
+      />
+    </div>
+    <div class="col-sm-5">
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        formControlName="email"
+      />
+    </div>
+  </div>
+  
+<div class="row marginTop">
+  <div class="col-sm-5">
+    <label for="password">Senha</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      formControlName="password"
+    />
+  </div>
+  <div class="col-sm-5">
+    <label for="date">Data de admissão</label>
+    <input type="date" class="form-control"/>
+  </div>
+</div>
+
+<div class="row marginTop">
+  <div class="col-sm-5">
+    <label for="area">Área de atuação</label>
+    <select class="form-select" aria-label="Default select example">
+      <option selected></option>
+      <option value="1">Front-end</option>
+      <option value="2">Back-end</option>
+      <option value="3">DevOps</option>
+    </select>
+  </div>
+  <div class="col-sm-5">
+    <label for="favTec">Técnologias preferidas</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="ReactJS">
+      <label class="form-check-label" for="ReactJS">
+        ReactJS
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="ReactNative">
+      <label class="form-check-label" for="ReactNative">
+        ReactNative
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="NodeJS">
+      <label class="form-check-label" for="NodeJS">
+        NodeJS
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="Javascript">
+      <label class="form-check-label" for="Javascript">
+        Javascript
+      </label>
+    </div>
+  </div>
+</div>
+
+  <div class="marginTop">
+    <button 
+      class="btn btn-success marginRight marginTop" >
+      Salvar
+    </button>
+    <button 
+      class="btn btn-outline-danger marginTop">
+      Cancelar
+    </button>
+  </div>
+</form>
+
