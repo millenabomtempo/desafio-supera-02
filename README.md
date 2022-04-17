@@ -1,27 +1,53 @@
-# DesafioAngular
+# Desafio 02 - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+O desafio consiste na criação de um formulário para cadastro, edição e visualização dos dados.
 
-## Development server
+**Requisitos**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- O formulário deve ter campos dos tipos: text, date, password, email, number, select e checkbox;
+- Ao carregar a página, o formulário deve buscar os dados, caso existam no storage e mostrar nos campos desabilitados (somente visualização dos dados);
+- Para editar o formulário deve-se ter um botão que habilitará os campos, permitindo assim as alterações;
+- Ao salvar a edição deve-se alterar os dados no storage, e iniciar a visualização novamente.
+- Caso não haja dados no storage, os campos serão mostrados vazios e habilitados, ao preenche-los e salva-los, os dados serão armazenados no storage;
+- Deve-se haver campos obrigatórios e exibição de mensagens de erros por campo.
+- As ações de salvar e editar só poderão ser realizadas quando o formulário estiver válido (os campos obrigatórios devem estar preenchidos);
 
-## Code scaffolding
+### 🛠 Tecnologias
+- [Angular](https://angular.io/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
+- [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Rodando o projeto
 
-## Build
+```bash
+# Clone este repositório
+$ git clone https://github.com/millenabomtempo/desafio-supera-02
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Instale as dependências
+$ yarn ou npm install
 
-## Running unit tests
+# Execute a aplicação backend
+$ yarn server ou npm run server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
 
-## Running end-to-end tests
+# Certifique-se que tenha o angular-cli instalado
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Execute a aplicação frontend
+$ ng serve
 
-## Further help
+# A aplicação inciará na porta:4200 - acesse http://localhost:4200/
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Features
+
+- [x] Listar usuários
+- [x] Mostrar um usuário
+- [ ] Editar usuário
+- [ ] Cadastrar usuário
+- [ ] Apagar usuário
+- [ ] Validação de campos
+- [ ] Adicionar mensagens de erros
+- [ ] Melhoria do layout
+
+![desafio-angular](https://user-images.githubusercontent.com/47898033/163733284-5605a0ab-0f28-497b-91a8-c248aa6de2b1.jpeg)
